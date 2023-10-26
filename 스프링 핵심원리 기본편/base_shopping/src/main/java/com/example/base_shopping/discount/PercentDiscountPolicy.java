@@ -11,7 +11,7 @@ import org.springframework.stereotype.Component;
 @MainDiscountPolicy
 public class PercentDiscountPolicy implements DiscountPolicy{
 
-    private int discountPercent = 10;
+    private int discountPercent = 20;
     @Override
     public int discount(Member member, int price) {
         if(member.getGrade() == Grade.VIP)
