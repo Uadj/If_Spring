@@ -2,9 +2,11 @@ package com.example.base_shopping.discount;
 
 import com.example.base_shopping.member.Grade;
 import com.example.base_shopping.member.Member;
+import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 
 @Component
+@Primary
 public class PercentDiscountPolicy implements DiscountPolicy{
 
     private int discountPercent = 10;
