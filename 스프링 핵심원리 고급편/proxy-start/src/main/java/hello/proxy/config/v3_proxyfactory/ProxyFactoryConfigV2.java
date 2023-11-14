@@ -1,6 +1,5 @@
 package hello.proxy.config.v3_proxyfactory;
 
-import hello.proxy.app.V2.*;
 import hello.proxy.app.v1.OrderServiceV1Impl;
 import hello.proxy.app.v2.OrderControllerV2;
 import hello.proxy.app.v2.OrderRepositoryV2;
