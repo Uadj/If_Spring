@@ -2,16 +2,19 @@ package com.example.aop;
 
 import com.example.aop.order.OrderRepository;
 import com.example.aop.order.OrderService;
+import com.example.aop.order.aop.AspectV2;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 import org.springframework.aop.support.AopUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.context.annotation.Import;
 
 import static org.assertj.core.api.AssertionsForClassTypes.assertThatThrownBy;
 
 @Slf4j
 @SpringBootTest
+@Import(AspectV2.class)
 public class AopTest {
     @Autowired
     OrderService orderService;
